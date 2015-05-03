@@ -100,6 +100,6 @@ if __name__ == "__main__":
 
     print hadamard*hadamard.transpose()
 
-    qc = QCircuit([qh])
+    qc = QCircuit([qn, qn, qh, qh])
     result = qc.calculate(matrix([[1],[0]]))
     print "QC result: %s" % result
